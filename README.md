@@ -16,6 +16,6 @@ can also able to know the prices across the country for their particular crops.
 
 
 <p align="center">
-  <img src="your_relative_path_here" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+  <img src="https://drive.google.com/uc?export=download&id=1nfKGdvzf3GyCpfc2dIJSm3MlAHL0mzfS" width="350" title="hover text">
+  <img src="https://drive.google.com/uc?export=download&id=15PAFv4zosAf73542LyCYHRadD74uH7DH" width="350" alt="accessibility text">
 </p>
