@@ -1,14 +1,12 @@
 <%- include('partials/header') %>
-
-<div class="container mt-5">
-  <h1>Login</h1>
-
+    <h1 style="margin-left:15rem; margin-top:10rem">Login</h1>
+<div class="container mt-5 LoginContainer">
   <div class="row">
     <div class="col-sm-8">
       <div class="card">
         <div class="card-body">
 
-          <!-- Makes POST request to /login route -->
+           <!-- Makes POST request to /login route -->
           <form action="/login" method="POST">
             <div class="form-group">
               <label for="email">Email</label>
@@ -19,6 +17,7 @@
               <input type="password" class="form-control" name="password">
             </div>
             <button type="submit" class="btn btn-dark">Login</button>
+          <a class="btn btn-dark" href="/register" role="button">Register</a>
           </form>
 
         </div>

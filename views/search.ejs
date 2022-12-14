@@ -1,0 +1,26 @@
+<%- include('partials/homeheader') %>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<center>
+<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jdf44z5r.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;"  loop  autoplay></lottie-player>
+</center>
+<h1 style="text-align:center">Search Farmer Details</h1>
+<div class="container searchContainer">
+
+  <form action="/search" method="POST">
+    <div class="form-group">
+      <label for="formGroupExampleInput">Enter Crop Name</label>
+      <input type="text" class="form-control" name ="cropName" placeholder="ex: paddy...wheat(enter only one)">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Enter Region</label>
+      <input type="text" class="form-control" name = "region"  placeholder="ex:repalle..markapur">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Enter Quantity(in quintal)</label>
+      <input type="text" class="form-control" name = "quantity"  placeholder="ex:2 ">
+    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+
+</div>

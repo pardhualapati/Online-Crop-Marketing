@@ -1,0 +1,28 @@
+<%- include('partials/homeheader') %>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<center>
+<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_bYScyx.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;"    autoplay></lottie-player>
+</center>
+  <h1 class="display-3" style ="text-align : center ">Success Details Found</h1>
+<div class="container">
+<center>
+<div class= "card seachDataBox ">
+  <div class="card-body" style="text-align:center">
+  <% users.forEach(function(user){ %>
+  <h2><i>Full Name: </i><%=user.fullName%> </h2>
+  <p><b>Email: </b> <%= user.fieldEmail %>
+  <p><b>Phone Number: </b><%= user.phNo %></p>
+  <p><b>State: </b><%= user.state %></p>
+  <p><b>Pin Code: </b><%= user.zip%></p>
+  <p> <b>Adress: </b><%= user.address %></p>
+  <% }) %>
+  </div>
+</div>
+</center>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_SkhtL8.json"  background="transparent"  speed="1"  style="width: 400px; height: 300px;"  loop  autoplay></lottie-player>
+
+
+
+</div>
