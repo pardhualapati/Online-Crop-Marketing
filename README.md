@@ -22,7 +22,7 @@ can also able to know the prices across the country for their particular crops.
 <h1> Register page </h1>
 
 <p align = "center">
-  <img src="https://drive.google.com/uc?export=download&id=15PAFv4zosAf73542LyCYHRadD74uH7DH" width="700" >
+  <img src="https://drive.google.com/uc?export=download&id=15PAFv4zosAf73542LyCYHRadD74uH7DH" width="720" >
   </p>
   
   <h1> Login page </h1>
@@ -40,25 +40,25 @@ can also able to know the prices across the country for their particular crops.
    <h1> Compose Page </h1>
 
 <p align = "center">
-  <img src="https://drive.google.com/uc?export=download&id=1UY3gngUvHR9bNkXaNP0WsrGLcoQkUOCa" width="700" >
+  <img src="https://drive.google.com/uc?export=download&id=1UY3gngUvHR9bNkXaNP0WsrGLcoQkUOCa" width="702" >
   </p>
   
   <h1> Search Page </h1>
 
 <p align = "center">
-  <img src="https://drive.google.com/uc?export=download&id=1KjRrzJnxq1AcQNOuFMkyoB1Yau-8_EQ-" width="700" >
+  <img src="https://drive.google.com/uc?export=download&id=1KjRrzJnxq1AcQNOuFMkyoB1Yau-8_EQ-" width="703" >
   </p>
 
 <h1> Success Page(if farmer details found from existing data) </h1>
 
 <p align = "center">
-  <img src="https://drive.google.com/uc?export=download&id=1D3nrsnM9JZFka0Kbdk1R9A-FHQVM8IPO" width="700" >
+  <img src="https://drive.google.com/uc?export=download&id=1D3nrsnM9JZFka0Kbdk1R9A-FHQVM8IPO" width="701" >
   </p>
   
   <h1> Failure Page(if farmer details not found from existing data) </h1>
 
 <p align = "center">
-  <img src="https://drive.google.com/uc?export=download&id=1WlPIRWoMXuLWWZ93NG5bdThlEKko8vni" width="700" >
+  <img src="https://drive.google.com/uc?export=download&id=1WlPIRWoMXuLWWZ93NG5bdThlEKko8vni" width="710" >
   </p>
   
   
