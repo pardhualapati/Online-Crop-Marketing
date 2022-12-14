@@ -14,9 +14,13 @@ of the farmer details they are available for that particular region and location
 communicate with the farmer by contact details that were proposed by the notification. The farmers 
 can also able to know the prices across the country for their particular crops.
 
-
+<h1> Home Page</h1>
 <p align="center">
   <img src="https://drive.google.com/uc?export=download&id=1nfKGdvzf3GyCpfc2dIJSm3MlAHL0mzfS" width="500" >
-  <img src="https://drive.google.com/uc?export=download&id=15PAFv4zosAf73542LyCYHRadD74uH7DH" width="500" alt="accessibility text">
-  
 </p>
+
+<h1> Register page </h1>
+
+<p align = "center">
+  <img src="https://drive.google.com/uc?export=download&id=15PAFv4zosAf73542LyCYHRadD74uH7DH" width="500" >
+  </p>
