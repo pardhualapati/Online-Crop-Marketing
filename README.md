@@ -42,6 +42,7 @@ can also able to know the prices across the country for their particular crops.
 <p align = "center">
   <img src="https://drive.google.com/uc?export=download&id=1UY3gngUvHR9bNkXaNP0WsrGLcoQkUOCa" width="700" >
   </p>
+  
   <h1> Search Page </h1>
 
 <p align = "center">
