@@ -1,28 +1,49 @@
 <%- include('partials/homeheader') %>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 <center>
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_bYScyx.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;"    autoplay></lottie-player>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_v8x67ufy.json" background="transparent" speed="1" style=" margin-top:20px;width: 200px; height: 200px;" loop autoplay></lottie-player>
+
 </center>
-  <h1 class="display-3" style ="text-align : center ">Success Details Found</h1>
-<div class="container">
-<center>
-<div class= "card seachDataBox ">
-  <div class="card-body" style="text-align:center">
+<h1 class="display-3" style="text-align : center ">Success Details Found</h1>
+
+<div class="card ">
   <% users.forEach(function(user){ %>
-  <h2><i>Full Name: </i><%=user.fullName%> </h2>
-  <p><b>Email: </b> <%= user.fieldEmail %>
-  <p><b>Phone Number: </b><%= user.phNo %></p>
-  <p><b>State: </b><%= user.state %></p>
-  <p><b>Pin Code: </b><%= user.zip%></p>
-  <p> <b>Adress: </b><%= user.address %></p>
-  <% }) %>
-  </div>
-</div>
-</center>
+  <div class="row g-0">
+    <div class="col-md-3">
+      <img class="img-fluid card-img " src="data:image/<%=user.img.contentType%>;base64,<%=user.img.data.toString('base64')%>" alt="">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body border-dark" >
+        <ul class="list-group list-group-flush">
 
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_SkhtL8.json"  background="transparent"  speed="1"  style="width: 400px; height: 300px;"  loop  autoplay></lottie-player>
+          <li class="list-group-item">
+            <h2><i>Full Name:       </i><%=user.fullName%> </h2>
+          </li>
+          <li class="list-group-item">
+            <p><b>Email:    </b> <%= user.fieldEmail %>
+          </li>
+          <li class="list-group-item">
+            <p><b>Phone Number:   </b><%= user.phNo %></p>
+          </li>
+          <li class="list-group-item">
+            <p><b>State:   </b><%= user.state %></p>
+          </li>
+          <li class="list-group-item">
+            <p><b>Pin Code:   </b><%= user.zip%></p>
+          </li>
+          <li class="list-group-item">
+            <p>
+              <b>Address: </b><%= user.address%> </p>
+            </p>
+            <p>
+              <b>Crop Quantity(in quintal):</b><%=user.cropQuantity%>
+            </p>
+        </ul>
+      </div>
+      </div>
+      </div>
+<% }) %>
 
-
-
-</div>
+    </div>

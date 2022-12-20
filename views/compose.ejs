@@ -1,61 +1,86 @@
 <%- include('partials/homeheader') %>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<span><center>
-  <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_mf5j5kua.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;"  loop  autoplay></lottie-player>
-</center>
+<span>
+  <center>
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_mf5j5kua.json" background="transparent" speed="1" style="width: 300px; height: 200px;" loop autoplay></lottie-player>
+  </center>
 </span>
-<span><h1 style ="text-align:center"> Enter the Field Details</h1></span>
+<span>
+  <h1 style="text-align:center"> Enter the Field Details</h1>
+</span>
 <div class="container composeContainer">
-<form action = "/compose" method = "POST">
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Full Name</label>
-      <input type="text" name="fullName" class="form-control" id="inputPassword4" placeholder="Boyapati Raj Kumar">
+  <form action="/compose" method="POST" enctype="multipart/form-data">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Full Name</label>
+        <input type="text" name="fullName" class="form-control" id="inputPassword4" placeholder="Boyapati Raj Kumar">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" name="fieldEmail" class="form-control" id="inputEmail4" placeholder="Email">
+      </div>
     </div>
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" name ="fieldEmail" class="form-control" id="inputEmail4" placeholder="Email">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Phone Number</label>
+        <input type="text" name="phnno" class="form-control" id="inputCity" placeholder="7095xxxxxx4">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <input type="text" name="state" value="" class="form-control" id="inputState" placeholder="Andhra Pradesh">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" name="pincode" class="form-control" id="inputZip" placeholder="ex:522265">
+      </div>
     </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Phone Number</label>
-      <input type="text" name="phnno" class="form-control" id="inputCity" placeholder="7095xxxxxx4">
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
     </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <input type="text" name="state" value="" class="form-control" id="inputState" placeholder="Andhra Pradesh">
+
+    <div class="form-row">
+
+    <div class=" form-group col-md-4 ">
+      <label for="image" class="form-label"> Upload Commodity Image</label>
+      <input class="form-control" name ="image" type="file" id="formFile" onchange="preview()">
     </div>
     <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text"  name ="pincode" class="form-control" id="inputZip" placeholder="ex:522265">
+
+      <!-- <button onclick="clearImage()" class="btn btn-primary mt-3">Click me</button> -->
     </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-<hr>
-<div class="form-group">
-  <label for="inputCropName">Crop Name</label>
-  <input type="text" name="cropName" class="form-control" placeholder="ex: paddy....wheat">
-</div>
-<div class="form-group">
-  <label for="inputCropRegion">Enter Region(near by town or city)</label>
-  <input type="text" name="cropregion" class="form-control" placeholder="village name associated to city">
-</div>
-<div class="form-group">
-  <label for="inputCropquantity">Enter Quantity (in quintal)</label>
-  <input type="text" name="cropQuantity" class="form-control" placeholder="Quantity ">
-</div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
+    <div class="form-group col-md-6">
+      <img id="frame" src="" class="img-fluid" />
     </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    <hr>
+
+    <script>
+      function preview() {
+        frame.src = URL.createObjectURL(event.target.files[0]);
+      }
+
+      function clearImage() {
+        document.getElementById('formFile').value = null;
+        frame.src = "";
+      }
+    </script>
+
+    <div class="form-group">
+      <label for="inputCropName">Commodity Name(crop name)</label>
+      <input type="text" name="cropName" class="form-control" placeholder="ex: paddy....wheat">
+    </div>
+    <div class="form-group">
+      <label for="inputCropRegion">Enter Region(near by town or city)</label>
+      <input type="text" name="cropregion" class="form-control" placeholder="village name associated to city">
+    </div>
+    <div class="form-group">
+      <label for="inputCropquantity">Enter Quantity (in quintal)</label>
+      <input type="text" name="cropQuantity" class="form-control" placeholder="Quantity ">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+
 </form>
 </div>
